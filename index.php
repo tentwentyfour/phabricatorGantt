@@ -9,7 +9,7 @@ $users = getUsers();
 	<title>Gantt Diagram from Phabricator</title>
 	<script src="codebase/dhtmlxgantt.js"></script>
 	<script src="./functions.js"></script>
-	<script src="http://export.dhtmlx.com/gantt/api.js"></script>  
+	<script src="https://export.dhtmlx.com/gantt/api.js"></script>
 	<link href="codebase/dhtmlxgantt.css" rel="stylesheet">
 	<style type="text/css" media="screen">
 		html, body{
@@ -42,7 +42,7 @@ $users = getUsers();
 	<script type="text/javascript">
 		var users = userAdapter(<?php echo json_encode($users) ?>);
 		var tasks = taskAdapter(<?php echo json_encode($tasks) ?>);
-		gantt.init("gantt_here");   
+		gantt.init("gantt_here");
 		gantt.parse(tasks);
 	</script>
 </body>
